@@ -822,14 +822,13 @@ body{
 }
 
 
-#btnjumbo:hover a{
-    -webkit-transform: scale(0.9);
+/*Transformaciones Ángel*/
+.transfor{
+    -webkit-transition: all 0.7s;
 }
-.btndescargas:hover a{
-    -webkit-transform: scale(0.9);
-}
-.text-center:hover .btn{
-    -webkit-transform: scale(0.9);
+
+.transfor:hover{
+    -webkit-transform: scale(0.93);
 }
 
 
