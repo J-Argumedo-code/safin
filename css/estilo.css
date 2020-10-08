@@ -430,31 +430,31 @@ body{
     /*Carrousel*/
 
     .imgcarousel{
-        width: 330px;
-        height: 185px;
+        width: 260px;
+        height: 135px;
     }
 
     #carouselExampleIndicators{
-        width: 310px;
-        height: 310px;
+        width: 260px;
+        height: 260px;
     }
     
     #carouselExampleControls{
-        width: 310px;
+        width: 260px;
     }
     
     #carrusel{
-        width: 310px;
+        width: 260px;
     }
 
     /*Video*/
     #video{
-        height: 270px;
+        height: 260px;
     }
     
     #video1{
-        width: 310px;
-        height: 270px;
+        width: 260px;
+        height: 230px;
     }
     .cardequipou{
         max-width: 100%;
