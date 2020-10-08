@@ -430,30 +430,30 @@ body{
     /*Carrousel*/
 
     .imgcarousel{
-        width: 310px;
-        height: 185px;
+        width: 330px;
+        height: 200px;
     }
 
     #carouselExampleIndicators{
-        width: 310px;
-        height: 310px;
+        width: 330px;
+        height: 330px;
     }
     
     #carouselExampleControls{
-        width: 310px;
+        width: 330px;
     }
     
     #carrusel{
-        width: 310px;
+        width: 330px;
     }
 
     /*Video*/
     #video{
-        height: 310px;
+        height: 330px;
     }
     
     #video1{
-        width: 310px;
+        width: 300px;
         height: 200px;
     }
     .cardequipou{
@@ -571,27 +571,27 @@ body{
     /*Carrousel*/
 
     .imgcarousel{
-        width: 100px;
-        height: 200px;
+        width: 380px;
+        height: 190px;
     }
 
     #carouselExampleIndicators{
-        width: 400px;
+        width: 380px;
         height: 340px;
     }
     
     #carouselExampleControls{
-        width: 400px;
+        width: 380px;
     }
     
     #carrusel{
-        width: 400px;
+        width: 380px;
     }
 
     /*Video*/
     #video1{
-        width: 400px;
-        height: 210px;
+        width: 380px;
+        height: 200px;
     }
 
     /*Equipo de trabajo*/
