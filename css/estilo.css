@@ -435,26 +435,26 @@ body{
     }
 
     #carouselExampleIndicators{
-        width: 330px;
-        height: 330px;
+        width: 310px;
+        height: 310px;
     }
     
     #carouselExampleControls{
-        width: 330px;
+        width: 310px;
     }
     
     #carrusel{
-        width: 330px;
+        width: 310px;
     }
 
     /*Video*/
     #video{
-        height: 260px;
+        height: 270px;
     }
     
     #video1{
-        width: 330px;
-        height: 285px;
+        width: 310px;
+        height: 270px;
     }
     .cardequipou{
         max-width: 100%;
