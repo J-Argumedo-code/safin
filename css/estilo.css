@@ -1,0 +1,905 @@
+body{
+    background-color: teal;
+    font-family: 'Exo 2', sans-serif;
+}
+
+#inicio{
+    height: 180px;
+
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(90, 90, 90, 1)),
+    url(../Resources/fondo2.png);
+    background-size: 100% 230%;
+}
+
+#inicio h1{
+    height: 180px;
+    color: white;
+
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+#inicio #logo{
+    height: 180px;
+
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#hora{
+    font-size: 17px;
+    position: absolute;
+    left: 87%;
+    bottom: 558px;
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.items .btn-group{
+    max-height: 40px;
+}
+
+#section h1{
+    width: 100%;
+    height: 120px;
+    margin-top: 13px;
+    color: white;
+    background-color: rgb(52, 58, 64);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+/*Cards inicio*/
+#textjumbo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#elementoscardinicio{
+    font-size: 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cardbutton{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#subtitulocardinicio{
+    font-size: 25px;
+}
+
+#titulocardinicio{
+    font-size: 50px;
+}
+
+#cardinicio{
+    height: 450px;
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(90, 90, 90, 1)),
+    url(../Resources/fondo5.jpg);
+    background-size: 100% 130%;
+}
+
+.actualizacioncard{
+    background-color: #f0f0f0;
+}
+
+/*Clases Jumbotron*/
+
+
+.jumbotron2{
+    padding-bottom: 45px;
+    padding-top: 25px;
+}
+
+#elementosjumbo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#jumboinfosistema{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#btnCollapse{
+    margin-bottom: 20px;
+}
+
+#collapseTarget{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+
+#btnjumbo{
+    display: flex;
+    justify-content: center;
+}
+
+.h2jumbo{
+    font-size: 50px;
+}
+
+
+/*Clases Carousel*/
+#allCarrusel{
+    display: flex;
+    justify-content: center;
+}
+
+#carouselExampleIndicators{
+    width: 550px;
+    height: 420px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#carouselExampleControls{
+    width: 550px;
+}
+
+#carrusel{
+    width: 550px;
+}
+
+/*Video demostraciones*/
+
+#video{
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*Equipo de Trabajo*/
+
+.imgcard1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*Cards FAQ*/
+.cardss{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cardali{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cardFAQ{
+    background-color: #A9D1D0;
+}
+
+.cardequipo{
+    background-color: #A9D1D0;
+    border: 2px outset white;
+}
+
+.cardequipou{
+    max-width: 48%;
+}
+
+/*Sección Descargas*/
+
+#Descargas{
+    padding: 30px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.descargas2{
+    height: 300px;
+    color: white;
+    /*background-color: rgb(52, 58, 64);*/
+    font-size: 50px;
+    border-radius: 10px;
+
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(90, 90, 90, 0.6)),
+    url();
+    background-size: 100% 110%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.descargas{
+    height: 460px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgcard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btndescargas{
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#jumbosafin{
+    display: flex;
+    flex-direction: row;
+}
+
+#descargas4{
+    font-size: 18px;
+    width: 80%;
+}
+
+/*Contáctanos*/
+
+#contactanos1{
+    margin: 20px;
+    padding: 30px;
+    color: white;
+    border: 2px outset white; 
+    border-radius: 5px;
+}
+
+.alert1{
+    display:none;
+}
+
+#alertt{
+    margin-top: 20px;
+}
+
+#contactanos4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contactanos5{
+    background-color: whitesmoke;
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 10px;
+    border: 1px inset black;
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*Comentarios*/
+.comentarios2{
+    margin-top: 30px;
+    padding: 30px;
+    color: black;
+    background-color: #A9D1D0;
+    border: 2px outset white; 
+    border-radius: 5px;
+}
+
+.comentarios1{
+    color: black;
+    padding: 30px;
+    border: 2px outset white;
+    border-radius: 10px;
+    background-color: #A9D1D0;
+
+}
+
+.media{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/*Footer*/
+#footer{
+    background-color: black;
+}
+
+#footer img{
+    margin: 6px;
+}
+
+.row2{
+    padding-top: 30px;
+}
+
+.quitar{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 380px){
+    #inicio{
+        height: 280px;
+
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(90, 90, 90, 0.8)),
+        url(../Resources/fondo4.png);
+        background-size: 160% 110%;
+    }
+
+    #hora{
+        font-size: 11.5px;
+        left: 2%;
+        bottom: 560px;
+    }
+
+    #inicio h1{
+        height: 100px;
+        font-size: 30px;
+    }
+
+    #inicio #logo{
+        height: 160px;
+    }
+
+    .items{
+        flex-direction: column;
+    }
+
+    #section h1{
+        font-size: 30px;
+    }
+
+    #h1jumboinicio{
+        font-size: 40px;
+    }
+
+    .colapsebtn{
+        font-size: 18px;
+    }
+
+    #subtitulocardinicio{
+        font-size: 18px;
+     }
+
+     #titulocardinicio{
+        font-size: 35px;
+     }
+
+     #elementoscardinicio{
+         font-size: 18px;
+         flex-direction: column;
+     }
+
+     #cardbutton1{
+         font-size: 16px;
+         margin-top: 25px;
+     }
+
+     #cardinicio{
+        background-size: 290% 130%;
+     }
+
+     /*h2 Info Sistema*/
+     .h2jumbo{
+        font-size: 30px;
+    }
+
+    /*Carrousel*/
+
+    .imgcarousel{
+        width: 340px;
+        height: 191px;
+    }
+
+    #carouselExampleIndicators{
+        width: 340px;
+        height: 340px;
+    }
+    
+    #carouselExampleControls{
+        width: 340px;
+    }
+    
+    #carrusel{
+        width: 340px;
+    }
+
+    /*Video*/
+    #video{
+        height: 260px;
+    }
+    
+    #video1{
+        width: 340px;
+        height: 191px;
+    }
+    .cardequipou{
+        max-width: 100%;
+    }
+
+    /*Titulo card descargas*/
+
+    #jumbosafin{
+        flex-direction: column;
+    }
+
+    .descargas{
+        margin-top: 20px;
+    }
+
+    .descargas2{
+        width: 100%;
+        height: 170px;
+        margin: 20px;
+    }
+    
+    #descargas3{
+        font-size: 32px;
+    }
+
+    #jumbosafin{
+        flex-direction: column;
+    }
+
+    #descargas4{
+        display: none;
+    }
+
+    .cardFAQ{
+        text-align: center;
+    }
+
+    #btnenviar1{
+        margin-top: 10px;
+    }
+
+    #contactanos4{
+        flex-direction: column;
+    }
+
+    #contactanos5{
+        font-size: 30px;
+        align-items: center;
+    }
+
+    .form-check{
+        width: 100px;
+    }
+
+    .media{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (min-width: 381px) and (max-width: 575.9px){
+    #inicio{
+        height: 280px;
+
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(90, 90, 90, 0.8)),
+        url(../Resources/fondo4.png);
+        background-size: 140% 130%;
+    }
+
+    #hora{
+        font-size: 14px;
+        left: 2%;
+        bottom: 550px;
+    }
+
+    #inicio h1{
+        height: 100px;
+        font-size: 30px;
+    }
+
+    #inicio #logo{
+        height: 160px;
+    }
+
+    #section h1{
+        font-size: 38px;
+    }
+
+    #subtitulocardinicio{
+        font-size: 20px;
+     }
+
+     #titulocardinicio{
+        font-size: 40px;
+     }
+
+     #elementoscardinicio{
+         font-size: 20px;
+         flex-direction: column;
+     }
+
+     #cardbutton1{
+         font-size: 16px;
+         margin-top: 25px;
+     }
+
+     #cardinicio{
+        background-size: 150% 130%;
+     }
+
+    /*Carrousel*/
+
+    .imgcarousel{
+        width: 450px;
+        height: 253px;
+    }
+
+    #carouselExampleIndicators{
+        width: 450px;
+        height: 370px;
+    }
+    
+    #carouselExampleControls{
+        width: 450px;
+    }
+    
+    #carrusel{
+        width: 450px;
+    }
+
+    /*Video*/
+    #video1{
+        width: 450px;
+        height: 253px;
+    }
+
+    /*Equipo de trabajo*/
+    .cardequipo{
+        max-width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /*Titulo card descargas*/
+    .descargas{
+        margin-top: 20px;
+    }
+    
+    .descargas2{
+        width: 100%;
+        height: 170px;
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    #descargas3{
+        font-size: 30px;
+    }
+
+    #jumbosafin{
+        flex-direction: column;
+    }
+
+    #descargas4{
+        font-size: 15px;
+    }
+
+    .cardFAQ{
+        text-align: center;
+    }
+
+    #contactanos4{
+        flex-direction: column;
+    }
+
+    #contactanos5{
+        font-size: 30px;
+        align-items: center;
+    }
+
+    #navbarSupportedContent h5{
+        width: 200px;
+    }
+}
+
+
+@media screen and (min-width: 575.9px) and (max-width: 767.5px){
+    #inicio{
+        height: 310px;
+
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(90, 90, 90, 0.8)),
+        url(../Resources/fondo3.png);
+        background-size: 120% 110%;
+    }
+
+    #hora{
+        left: 2%;
+        bottom: 558px;
+    }
+
+    #inicio h1{
+        height: 100px;
+    }
+
+    #h1jumboinicio{
+        font-size: 40px;
+    }
+
+    #in{
+        display: flex;
+        justify-content: space-around;
+     }
+
+     #elementoscardinicio{
+        font-size: 20px;
+        flex-direction: column;
+    }
+
+    #cardbutton1{
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+     /*Titulo card descargas*/
+     .descargas2{
+        width: 100%;
+        height: 160px;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #jumbosafin{
+        flex-direction: column;
+    }
+
+    .cardFAQ{
+        text-align: center;
+    }
+
+    #contactanos4{
+        flex-direction: column;
+    }
+
+    #contactanos5{
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    #inicio{
+        background-image: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(90, 90, 90, 0.8)),
+        url(../Resources/fondo3.png);
+        background-size: 100% 200%;
+    }
+
+    #hora{
+        left: 82%;
+        bottom: 558px;
+    }
+
+    #subtitulocardinicio{
+        font-size: 20px;
+     }
+
+     #titulocardinicio{
+        font-size: 40px;
+     }
+
+     #elementoscardinicio{
+         font-size: 20px;
+         flex-direction: column;
+     }
+
+     #cardbutton1{
+         font-size: 16px;
+         margin-top: 25px;
+     }
+
+     #cardinicio{
+        background-size: 150% 130%;
+     }
+
+    /*Titulo card descargas*/
+    .descargas2{
+        width: 100%;
+        height: 160px;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #imgdescargas23{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+    #buscar{
+        margin-left: 18px;
+        height: 100px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+     #descargas3{
+         font-size: 30px;
+     }
+
+     #hora{
+        left: 82%;
+        bottom: 558px;
+    }
+}
+
+
+/*Transiciones*/
+/*Fabiola Norio*/
+.cardequipo:hover .row{
+    background-color: #343A40;
+    color:white;	
+}
+.row{
+    transition: all 0.7s ease-out 0s;
+}
+
+
+/*Daniela Bonifacio*/
+#contactanos5{
+    transition: all 0.6s linear 0s;
+}
+
+#contactanos5:hover{
+    background-color: #343A40;
+    color: whitesmoke;
+    border: 1.5px inset white;
+}
+
+
+
+/*Transformaciones*/
+/*Eyleen Elizabeth Santos Amaya*/
+.card img{
+    transition: all 0.7s;
+}
+.card:hover img{
+    -webkit-transform: scale(0.87);
+    border-radius: 13px;
+}
+
+.jumbotron img{
+    transition: all 0.7s;
+}
+.jumbotron:hover img{
+    -webkit-transform: scale(1.1);
+}
+
+
+#btnjumbo:hover a{
+    -webkit-transform: scale(0.9);
+}
+.btndescargas:hover a{
+    -webkit-transform: scale(0.9);
+}
+.text-center:hover .btn{
+    -webkit-transform: scale(0.9);
+}
+
+
+
+
+/*Animaciones*/
+/*Josué Gerardo Argumedo Rivera*/
+.carga{
+    -webkit-animation: cargar 1.4s 1 linear 0s; /* nombre, duracion, cantidad de veces, tipo y retraso*/
+    -moz-animation: cargar 1.4s 1 linear 0s;
+}
+#inicio img{
+    -webkit-animation: giro 14s infinite linear 2s;
+    -moz-animation: giro 14s infinite linear 2s;
+}
+.badge{
+    -webkit-animation: desaparecer 4s infinite linear 2s;
+    -moz-animation: desaparecer 4s infinite linear 2s;
+}
+#Descargas .card-body svg{
+    -webkit-animation: desaparecer 3.5s infinite linear 2s;
+    -moz-animation: desaparecer 3.5s infinite linear 2s;
+}
+
+
+/* Configuración de animaciones */
+@-webkit-keyframes cargar{
+    0%{filter: opacity(0%); -webkit-transform: translateY(120px);}
+	100%{}
+}
+@-webkit-keyframes giro{
+    0%{}
+	100%{-webkit-transform: rotateY(-360deg);}
+}
+@-webkit-keyframes desaparecer{
+    0%{}
+    50%{filter: opacity(0%);}
+	100%{}
+}
+
+
+/*Pantalla de carga*/
+#contenedor_carga{
+    background-color: teal;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+}
+#carga{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transition: all 2s;
+    -webkit-animation: carga 2.5s infinite ease-out;
+    -moz-animation: carga 2.5s infinite ease-out;
+}
+@-webkit-keyframes carga{
+    0%{}
+    50%{-webkit-transform: scale(1.1); -moz-transform: scale(1.1);}
+	100%{}
+}

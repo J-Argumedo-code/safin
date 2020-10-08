@@ -1,0 +1,851 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../Resources/Logo Ex-Expo (Engrane)2.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilo.css">
+
+    <title>SAFIN</title>
+  </head>
+  <body data-spy="scroll" data-target="#menu" onload="horaa()">
+
+    <!--Pantalla de Carga-->
+    <div id="contenedor_carga">
+      <div id="carga">
+        <img src="../Resources/Carga.png" height="200px" width="200px" alt="logo">
+      </div>
+    </div>
+
+    <div class="container-fluid" id="inicio">
+        <div class="row">
+            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-12" id="logo">
+              <img src="../Resources/Logo Ex-Expo (Nombre).png" alt="logo1" width="140px" height="140px">
+            </div>
+
+            <div class="col-xl-10 col-lg-10 col-md-9 col-sm-12 text-center">
+              <h1>Système intégral de gestion des entreprises de pompes funèbres</h1>
+            </div>
+            <h6 class="text-white" id="hora" style="padding: 5px 20px 5px 20px; border: 1px solid white; border-radius: 5px;"></h6>
+        </div>
+      </div>
+
+      
+              <nav id="menu" class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#inicio">
+                      <svg width="1em" height="1em" viewBox="0 1 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                      </svg>
+                      D'accueil</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#InfoSistema">Information sur le système</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Démonstrations
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#Demostraciones">Démonstrations</a>
+                            <a class="dropdown-item" href="#Comentarios">Commentaires</a>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#EquipoTrabajo">Travail d'équipe</a> 
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#Descargas">Téléchargements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#FAQ">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contactanos">Contactez-nous</a>
+                         </li>
+    
+                      </ul>
+
+                      <div class="items">
+                        <form class="form-inline my-2 my-lg-0" id="buscar">
+                          <input class="form-control mr-sm-2" type="search" placeholder="Chercher" aria-label="Search" size="9">
+                          <button class="btn btn-outline-light my-2 my-sm-0 transfor mr-2" type="submit">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                              <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                            </svg>
+                          </button>
+                        </form>
+  
+                        <div class="btn-group dropleft">
+                          <button type="button" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Langue
+                          </button>
+                          <div class="dropdown-menu" style="border: 1px solid black; padding-top: 0; padding-bottom: 0;">
+                            <a class="dropdown-item" href="../index.html">Español</a>
+                            <a class="dropdown-item" href="english.html">English</a>
+                            <a class="dropdown-item active" href="french.html">Français</a>
+                          </div>
+                        </div>
+                      </div>
+                      
+
+                    </div>
+              </nav>
+            
+      
+
+    <div class="container-fluid mt-3" id="section">
+
+        <div class="row" id="in">
+          <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12">
+            
+            <div class="card" id="cardinicio" style="border: 0.5px solid white;">
+              <div class="card-img-overlay text-white" id="textjumbo">
+                <div id="textcard1" class="text-center">
+                  <p id="subtitulocardinicio">Solutions logicielles avancées.</p>
+                  <h2 class="card-title" style="font-weight: bold;" id="titulocardinicio">La technologie au bout des doigts</h1>
+                </div>
+                
+                <div id="elementoscardinicio">
+                  <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+                    <p class="card-text">Nous gérons vos opérations.</p>
+                    <p class="card-text">Nous vous aidons à atteindre vos objectifs.</p>
+                    <p class="card-text">Nous nous adaptons à vos besoins.</p>
+                  </div>
+
+                  <div id="cardbutton" class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                    <a class="btn btn-outline-light btn-lg transfor" href="#InfoSistema" role="button" id="cardbutton1">apprendre à nous connaître
+                      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-up-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                
+                
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+
+            <div class="card actualizacioncard" style="border: 2px solid white;">
+              <div class="card-header text-center" style="font-size: 22px;">Mise à jour 
+                <span class="badge badge-pill badge-info">Nouveau</span> 
+              </div>
+              <img src="../Resources/Logo Ex-Expo (Nombre)3.png" class="card-img-top" alt="logo">
+              <div class="card-body text-justify">
+                <h5 class="card-title text-center" style="margin: 0px;">V. 1.0</h5>
+                <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item actualizacioncard">Soutien à la nouvelle résolution</li>
+                <li class="list-group-item actualizacioncard">Fixé les insectes et les petits insectes</li>
+              </ul>
+              <div class="card-body text-center">
+                <a href="#Descargas" class="card-link" style="font-size: 20px;">Lire la suite...</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        
+        <div class="row row2" id="InfoSistema">
+          <h1>Information sur le système</h1>
+            <div class="col-12">
+
+              <div class="jumbotron jumbotron2">
+                <div  id="elementosjumbo">
+                  <div>
+                    <h2 class="h2jumbo">SAFIN System</h2>
+                    <p class="lead">Integral Funeral Home Management System.</p>
+                  </div>
+                  <img src="../Resources/Logo Ex-Expo (Nombre).png" alt="logo" width="120px" height="120px">
+                </div>
+                
+                <hr class="my-4">
+                  
+                <div id="jumboinfosistema">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <h3 class="text-center">Qu'est-ce que c'est ?</h3>
+                    <p class="text-justify"> <br> Notre projet consiste en la création d'un "Système 
+                      d'Administration" à l'aide de l'application Visual Studio, dans sa version 14.0.25 - année 
+                      2015, avec l'utilisation du langage de programmation C#, c'est un système destiné aux Maisons 
+                      Funéraires Intégrales, car il compte avec les fonctions d'administration et de facturation des 
+                      services offerts par celle-ci, autant que les services de Funérailles, de Voile et de Cimetière, 
+                      qu'elle ait un cimetière ou non.
+                      <br><br>
+                      Le système fonctionne sous l'interface de niveau utilisateur, il dispose donc d'un "Login" pour 
+                      en prendre le contrôle, et ainsi empêcher tout utilisateur, d'accéder aux informations du 
+                      système, de modifier ou même de supprimer des données.
+                    </p>
+                  </div>
+
+                  <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 text-justify">
+                    <h3 class="text-center">Actions de système</h3>
+                    <p>
+                      
+                      o Enregistrement et modification des maisons funéraires<br>
+                      o Configuration de l'utilisateur<br>
+                      o	Gestion des paquets<br>
+                      o	Enregistrement des clients<br>
+                      o	Facturation des services<br>
+                      o	Génération du détail des services<br>
+                      o	Administration des niches et des parcelles<br>
+                      o	Contrôle de la disponibilité des niches<br>
+
+                    </p>
+              
+                    <h3 class="text-center">Services fournis</h3>
+                    <p>
+                      -Insertion dans le système <br>
+                      -Installation et configuration <br>
+                      -Formation <br>
+                      -Migration de la base de données <br>
+                      -Vente de services techniques <br>
+                      -Adaptation aux préférences de votre entreprise
+
+                    </p>
+                  </div>
+
+                </div>
+                
+
+                <div id="btnjumbo">
+                  <a class="btn btn-outline-info btn-lg colapsebtn transfor" style="margin-right: 5px; margin: 10px;" 
+                  href="collapseTarget" role="button" data-toggle="collapse" data-target="#collapseTarget" aria-expanded="false" aria-controls="collapseTarget">Sécurité</a>
+                  <a class="btn btn-outline-info btn-lg colapsebtn transfor" style="margin-left: 5px; margin: 10px;" 
+                  href="collapseTarget1" role="button" data-toggle="collapse" data-target="#collapseTarget1" aria-expanded="false" aria-controls="collapseTarget">Base de données</a>
+                </div>
+                
+                
+                <div class="row mt-2">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="collapse multi-collapse" id="collapseTarget">
+                      
+                      <h3 class="text-center">Méthodes de cryptage</h3>
+                      <p class="text-justify">
+                      <br>Au SAFIN, nous nous soucions de votre sécurité. C'est pourquoi le système utilise des 
+                      méthodes de cryptage pour une plus grande sécurité, de sorte que les informations importantes 
+                      telles que les mots de passe et les numéros de carte de crédit seront cryptées avec la méthode 
+                      de cryptage MD5 (cryptage 128 bits, composé de 32 caractères hexadécimaux).
+                      </p>
+
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="collapse multi-collapse" id="collapseTarget1">
+                      
+                      <h3 class="text-center">Base de données</h3>
+                      <p class="text-justify">
+                      <br>
+                      Le système dispose également de sa propre base de données hébergée sur un serveur local grâce 
+                      à l'utilisation de l'outil XAMPP (le serveur est le portable ou l'ordinateur où le système 
+                      démarre), celui-ci pour gérer et conserver un enregistrement/contrôle de tous les processus 
+                      effectués dans le système.
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+
+            </div>
+        </div>
+
+        <div class="row row2" id="Demostraciones">
+          <h1>Démonstrations</h1>
+          
+          <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12" id="allCarrusel">
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                
+              </ol>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12" style="padding: 0px;">
+                                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner" id="carrusel">
+                                        <div class="carousel-item active">
+                                            <img src="../Resources/1.png" class="d-block imgcarousel" alt="First slide" 
+                                            width="550px" height="310px">
+                                            <h5 class="text-center text-white" style="margin-top: 10px;">Login</h5>
+                                            <p class="text-center text-white">Interface de connexion au système.</p>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../Resources/2.png" class="d-block imgcarousel" alt="Second slide" 
+                                            width="550px" height="310px">
+                                            <h5 class="text-center text-white" style="margin-top: 10px;">Première utilisation du système</h5>
+                                            <p class="text-center text-white">Interface système lors de la détection de la première utilisation du système.</p>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../Resources/3.png" class="d-block imgcarousel" alt="Third slide" 
+                                            width="550px" height="310px">
+                                            <h5 class="text-center text-white" style="margin-top: 10px;">Interface initiale.</h5>
+                                            <p class="text-center text-white">Écran de démarrage du système lors de l’entrée.</p>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../Resources/4.png" class="d-block imgcarousel" alt="quarter slide" 
+                                            width="550px" height="310px">
+                                            <h5 class="text-center text-white" style="margin-top: 10px;">Interface facturation</h5>
+                                            <p class="text-center text-white">Interface de facturation du service à la clientèle à un client.</p>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../Resources/5.png" class="d-block imgcarousel" alt="fifth slide" 
+                                            width="550px" height="310px">
+                                            <h5 class="text-center text-white" style="margin-top: 10px;">Interface d'inventaire</h5>
+                                            <p class="text-center text-white">Interface de menu d’inventaire de la société.</p>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../Resources/6.png" class="d-block imgcarousel" alt="sixth slide" 
+                                            width="550px" height="310px">
+                                            <h5 class="text-center text-white" style="margin-top: 10px;">Ajouter un nouvel utilisateur</h5>
+                                            <p class="text-center text-white">Nouvelle interface utilisateur ou entreprise.</p>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                      </a>
+                                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                      </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+          </div>
+
+          <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12" id="video">
+            <iframe id="video1" width="500" height="281" src="https://www.youtube-nocookie.com/embed/LXb3EKWsInQ" frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h4 class="text-white">Tutoriel vidéo</h4>
+          </div>
+        </div>
+
+        <div class="row row2" id="EquipoTrabajo">
+          <h1>Travail d'équipe</h1>
+          <div class="col-12" style="margin-top: 20px;">
+            
+            <div class="card-deck text-justify cardali">
+
+              <div class="card mb-3 cardequipo">
+                <div class="row no-gutters">
+                  <div class="col-md-4 imgcard1">
+                    <img src="../Resources/Josue.jpeg" class="card-img" alt="Josué">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-header">Programmeur</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Josué Gerardo Argumedo Rivera</h5>
+                      <p class="card-text">Être programmeur ouvre un monde de portes infinies, car la seule limite est votre propre imagination
+                          <br> "Si vous pouvez l'imaginer, vous pouvez le créer". </p>
+                      <p class="card-text"><small class="text-muted">Dernière mise à jour 01/10</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3 cardequipo">
+                <div class="row no-gutters">
+                  <div class="col-md-4 imgcard1">
+                    <img src="../Resources/Fabi.jpeg" class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-header">Programmeur</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Fabiola Michelle Herrera Norio</h5>
+                      <p class="card-text">"Si tu fais un spectacle, tu le frustreras un jour. Mais si tu lui 
+                          apprends à programmer, tu lui faciliteras la vie".
+                      </p>
+                      <p class="card-text"><small class="text-muted">Dernière mise à jour 01/10</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card-deck text-justify cardali">
+
+              <div class="card mb-3 cardequipo">
+                <div class="row no-gutters">
+                  <div class="col-md-4 imgcard1">
+                    <img src="../Resources/Eyleen.jpeg" class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-header">Concepteur web</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Eyleen Elizabeth Santos Amaya</h5>
+                      <p class="card-text">"Si vous pouvez imaginer, vous pouvez programmer et concevoir".</p>
+                      <p class="card-text"><small class="text-muted">Dernière mise à jour 01/10</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3 cardequipo">
+                <div class="row no-gutters">
+                  <div class="col-md-4 imgcard1">
+                    <img src="../Resources/Dani.jpeg" class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-header">Concepteur web</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Evelyn Daniela Bonifacio Hernández</h5>
+                      <p class="card-text">"Fixez d'abord le problème, puis tapez le code".</p>
+                      <p class="card-text"><small class="text-muted">Dernière mise à jour 01/10</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card-deck text-justify cardali">
+
+              <div class="card mb-3 cardequipo cardequipou">
+                <div class="row no-gutters">
+                  <div class="col-md-4 imgcard1">
+                    <img src="../Resources/Angel.jpeg" class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-header">Programmeur</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Ángel Marcelo Martínez Ardón</h5>
+                      <p class="card-text">"Si un avenir réussi est ce que vous cherchez, essayez-le dans votre 
+                          esprit pour éviter les bogues ou les problèmes sur le chemin que vous faites.".</p>
+                      <p class="card-text"><small class="text-muted">Dernière mise à jour 01/10</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="row row2" id="Descargas">
+          <div class="descargas2 col-xl-6 col-lg-4 col-md-12 col-sm-12">
+            <h2 id="descargas3" class="text-center">Section de téléchargement:
+              <svg style="padding-left: 10px;" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cloud-download" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"/>
+                <path fill-rule="evenodd" d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"/>
+              </svg>
+            </h2>
+            <h6 class="text-center mt-4" id="descargas4">Nous vous invitons à télécharger nos manuels d'utilisation pour plus d'informations.</h6>  
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 descargas">
+          
+              <div class="card text-justify imgcard" style="padding: 5px; padding-top: 10px;">
+                <img src="../Resources/pdf.png" class="card-img-top" alt="pdf" style="width: 130px; height: 130px;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Manuel technique:</h5>
+                  <p class="card-text">Document contenant toutes les informations sur le projet "SAFIN". En quoi 
+                    cela consiste-t-il, de qui voulons-nous en bénéficier, etc.</p>
+                  <div class="btndescargas">
+                    <a href="../Resources/Manual Técnico SAFIN.pdf" class="btn btn-outline-info transfor">Aperçu
+                    </a>
+                    <a href="../Resources/Manual Técnico SAFIN.pdf" download="Manual Técnico SAFIN.pdf" class="btn btn-outline-dark transfor">Télécharger
+                      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                        <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                      </svg>
+                    </a>
+                  </div>
+                  
+                </div>
+              </div>
+
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 descargas">
+
+              <div class="card text-justify imgcard" style="padding: 5px; padding-top: 10px;">
+                <img src="../Resources/pdf.png" class="card-img-top" alt="pdf" style="width: 130px; height: 130px;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Manuel des exigences:</h5>
+                  <p class="card-text">Manuel avec toutes les exigences minimales et recommandées pour un fonctionnement optimal du système.</p>
+                  
+                  <div class="btndescargas">
+                    <a href="../Resources/Manual de Requerimientos SAFIN.pdf" class="btn btn-outline-info transfor">Aperçu
+                    </a>
+                    <a href="../Resources/Manual de Requerimientos SAFIN.pdf" download="Manual de Requerimientos SAFIN.pdf" class="btn btn-outline-dark transfor">Télécharger
+                      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                        <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                      </svg>
+                    </a>
+                  </div>
+                  
+                </div>
+              </div>
+
+            
+          </div>
+
+          <div class="mt-4 col-12">
+            <div class="jumbotron" id="jumbosafin">
+              <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 text-justify">
+                <h2>VERSION SAFIN 1.0:</h2>
+              <hr class="my-4">
+              <p>Sortie de la version 1.0 du système SAFIN. Depuis août dernier, le module d'administration SAFIN 
+                présente sa première version, qui intègre de nouvelles fonctionnalités de l'application. <br>
+              </p> <p style="font-weight: bold; font-size: 20px;"> Exigences: </p> 
+              <p>Ce système est compatible avec Windows version 8.1 et Windows 10, vous avez besoin ♦ Avoir le 
+                .NET Framework 4.6.1 installé ♦ Une résolution d'écran minimum de: 1360 x 768 ♦ Mémoire RAM 
+                recommandée de 2 Go avec un matériel 64 bits ♦ Avoir serveur XAMPP installé V3.2.4</p>
+              </div>
+              
+              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12" style="display: flex; justify-content: space-around;">
+                <img src="../Resources/Logo Ex-Expo (Nombre).png" alt=""  id="imgdescargas23" width="200px" height="200px">
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row row2" id="FAQ">
+            <h1>FAQ</h1>
+          <div class="col-12 cardss"> 
+            <div class="col-xl-11 col-lg-11 col-md-12 col-sm-12 text-justify">
+
+              <div class="card cardFAQ" style="margin-top: 25px;">
+                <h5 class="card-header text-center bg-dark text-white">Exigences</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Quelles sont les plates-formes compatibles avec le système?</h5>
+                  <p class="card-text">Actuellement, le système n'est compatible qu'avec les PC équipés des systèmes d'exploitation Windows et MAC.</p>
+                  
+                  <hr color="black">
+  
+                  <h5 class="card-title">Quelles sont les exigences minimales pour le système?</h5>
+                  <p class="card-text">Il faut au moins un PC avec une résolution d'écran de 1360x768, une mémoire 
+                    RAM d'au moins 1Go et un système d'exploitation Windows 8.1. En plus d'avoir installé le .NET 
+                    Framework 4.6.1. <br>
+                    Si vous souhaitez en savoir plus sur la configuration requise, nous vous invitons à lire le <a href="#Descargas">Manuel des exigences</a>.</p>
+                
+                  </div>
+              </div>
+  
+              <div class="card cardFAQ" style="margin-top: 25px;">
+                <h5 class="card-header text-center bg-dark text-white">Sécurité</h5>
+                <div class="card-body">
+  
+                  <h5 class="card-title">Mes données sont-elles en sécurité?</h5>
+                  <p class="card-text">Nous pouvons garantir que toutes vos données sont en sécurité dans le 
+                    système, grâce aux méthodes d'infncryptage mises en œuvre dans le système, telles que MD5 et 
+                    SHA1 pour protéger les mots de passe, les cartes de crédit ou d'autres sensibilisations.</p>
+                    
+                 </div>
+              </div>
+  
+              <div class="card cardFAQ" style="margin-top: 25px;">
+                <h5 class="card-header text-center bg-dark text-white">Erreurs possibles</h5>
+                <div class="card-body">
+  
+                  <h5 class="card-title">Que puis-je faire si le système ne se connecte pas à la base de données?</h5>
+                  <p class="card-text">Vérifiez si le serveur de la base de données fonctionne (ou démarrez le 
+                    serveur en cliquant sur le bouton START dans Xampp).</p>
+
+                    <hr color="black">
+
+                  <h5 class="card-title">Je ne peux pas entrer dans le système</h5>
+                  <p class="card-text">Vérifiez que votre nom d'utilisateur et votre mot de passe sont correctement 
+                    orthographiés, en tenant compte des majuscules, des minuscules et des caractères spéciaux. 
+                    Si le problème persiste, essayez de récupérer votre mot de passe ou contactez votre administrateur 
+                    système.</p>
+                    
+                 </div>
+              </div>
+  
+            </div>
+          </div>
+          
+
+        </div>
+
+        <div class="row row2" id="Contactanos">
+          <h1>Contactez-nous</h1>
+          <div class="col-12">
+
+            <div class="col-12" id="contactanos4">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12" id="contactanos5" style="border-radius: 10px;">
+                <p>Vous pouvez nous appeler au:</p>
+                <p>+503 2278-4202</p>
+                <p>+503 2234-9854</p>
+              </div>
+
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12" style="display: flex; align-items: center; justify-content: space-around;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.9235223204464!2d-89.20744208589424!3d13.723079890366014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6330813f89e61f%3A0xcb93eef8cc8c07e1!2sInstituto%20T%C3%A9cnico%20Ricaldone!5e0!3m2!1ses-419!2ssv!4v1599140532443!5m2!1ses-419!2ssv" width="500" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>              
+              </div>
+            </div>
+               
+            <form id="contactanos1">
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Noms</label>
+                <input required type="text" class="form-control" id="exampleFormControlInput1" name="name" placeholder="Antonio">
+              </div>
+              
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Nom de famille</label>
+                <input required type="text" class="form-control" id="exampleFormControlInput2" name="name2" placeholder="Martin">
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Envoyez un courriel à</label>
+                <input required type="email" class="form-control" id="exampleFormControlInput3" name="email" placeholder="name@example.com">
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Téléphone</label>
+                <input type="tel" class="form-control" id="exampleFormControlInput4" placeholder="(+1) 1234-5678">
+              </div>
+
+              <h5 class="mt-4">Raison:</h5>
+              <div class="form-check mb-3">
+                
+                <input class="form-check-input" type="radio" id="exampleRadios1" value="option1">
+                <label class="form-check-label mr-5">
+                    Erreur
+                </label>
+              
+                <input class="form-check-input" type="radio" id="exampleRadios2" value="option2">
+                <label class="form-check-label mr-5">
+                    Consultez
+                </label>
+
+                <input class="form-check-input" type="radio" id="exampleRadios3" value="option3">
+                <label class="form-check-label mr-5">
+                    Autres
+                </label>
+              </div>
+
+              <div class="form-group mt-4">
+                <label for="exampleFormControlTextarea1">Commentaires:</label>
+                <textarea required class="form-control" id="exampleFormControlTextarea1" placeholder="Veuillez expliquer votre commentaire" rows="3"></textarea>
+              </div>
+
+              <div class="text-center mt-4">
+                <button type="reset" class="btn btn-dark transfor" style="width: 200px; font-size: 18px;" id="limpiar">Vider les données</button>
+
+                <button type="submit" class="btn btn-dark transfor" style="width: 200px; font-size: 18px;" 
+                data-toggle="modal" id="btnenviar1" name="botonenviar">Envoyer</button>
+                
+
+              </div>
+
+              <div class="alert alert-success alert-dismissible fade show alert1" role="alert" id="alertt">
+                <strong></strong> Message envoyé avec succès.
+                <button type="button" class="close" aria-label="Close" id="btncerrar" style="outline: none;">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+              
+
+            </form>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Êtes-vous sûr d'envoyer le message?
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="no">Non</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnenviar">Oui</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row2" id="Comentarios">
+          <h1>Commentaires</h1>
+
+          <div class="col-12">
+            <div id="disqus_thread" class="comentarios1"></div>
+            <script>
+
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://safin-3.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Veuillez activer JavaScript pour voir les<a href="https://disqus.com/?ref_noscript">commentaires alimentés par Disqus.</a></noscript>
+          </div>
+
+          <div class="col-12 text-center">
+            <button class="btn btn-primary transfor" style="margin: 20px;" type="button" data-toggle="collapse" data-target="#comentarios3" aria-expanded="false" aria-controls="collapseExample">
+              Commentaires
+            </button>
+          </div>
+
+          <div class="col-12 collapse" id="comentarios3">
+            <div class="comentarios2">
+              <form>
+                <div class="form-group">
+                  <label>Nom:</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                
+                <div class="form-group">
+                  <label>Commentaire:</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              </form>
+
+              <div class="col-12 text-center">
+                <button type="button" class="btn btn-outline-primary" style="margin: 20px; font-size: 18px; padding-left: 20px; padding-right: 20px;">Envoyer</button>
+              </div>
+  
+              <div class="media mt-3 text-justify">
+                <img src="../Resources/user2.png" class="mr-3" alt="persona" width="60" height="60">
+                <div class="media-body">
+                  <h5 class="mt-0">Adrien Legrand</h5>
+                  Très intéressant ce programme et très utile, félicitations
+                </div>
+              </div>
+  
+              <div class="media mt-3 text-justify">
+                  <img src="../Resources/user4.png" class="mr-3" alt="persona" width="60" height="60">
+                  <div class="media-body">
+                    <h5 class="mt-0">Danièle Rousseau</h5>
+                    Très bonnes vidéos et systèmes. Vous auriez un e-mail pour faire une demande de renseignements si vous pouviez 
+                    Cela aide. Salutations.
+                  </div>
+              </div>
+             
+              <div class="media mt-3 text-justify">
+                <img src="../Resources/user3.png" class="mr-3" alt="perros" width="60" height="60">
+                <div class="media-body">
+                  <h5 class="mt-0">Dorianne Blanc</h5>
+                  Excellent programme, le code m'a sorti de nombreux doutes
+  
+                  <div class="media mt-3">
+                    <img src="../Resources/user5.png" class="mr-3" alt="persona" width="60" height="60">
+                    <div class="media-body">
+                        <h5 class="mt-0">Eliane Lefebvre</h5>
+                        Bonjour, merci beaucoup d'avoir partagé ce projet, il m'a vraiment beaucoup aidé pour un devoir 
+                    </div>
+                  </div>
+  
+                  </div>
+                  </div>
+  
+  
+              
+              <div class="media mt-3 text-justify">
+                <img src="../Resources/user.png" class="mr-3" alt="persona" width="60" height="60"> 
+                <div class="media-body">
+                  <h5>Eva Morin</h5>
+                  Wow, j'ai trouvé un projet vraiment bien fait  
+              
+                  <div class="media mt-3">
+                    <img src="../Resources/user1.png" class="mr-3" alt="persona" width="60" height="60">
+                    <div class="media-body">
+                      <h5>Felix Dumont</h5>
+                      Un très bon système m'a beaucoup aidé dans la gestion de la paperasserie d'un funérarium.
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+        
+      
+    </div>
+
+    <div class="container-fluid mt-5" id="footer">
+      <div class="row">
+        <div class="col-12" style="padding: 0px">
+          <nav class="navbar navbar-expand navbar-dark bg-dark">
+            <a class="navbar-brand" href="#Inicio">SAFIN</a>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <h5 style="color: white;">© 2020 SAFIN, Tous droits réservés</h5>
+                </li>
+              </ul>
+
+              <form class="form-inline my-2 my-lg-0">
+                <a href="https://www.facebook.com/"><img src="../Resources/facebook.png" alt="" width="50" height="50"></a>
+                <a href="https://www.instagram.com/"><img src="../Resources/insta.png" alt="" width="50" height="50"></a>
+                <a href="https://twitter.com/"><img src="../Resources/twitter.png" alt="" width="50" height="50"></a>
+              </form>
+
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script id="dsq-count-scr" src="//safin-3.disqus.com/count.js" async></script>
+    <script src="../js/function.js"></script>
+  </body>
+</html>
