@@ -571,27 +571,27 @@ body{
     /*Carrousel*/
 
     .imgcarousel{
-        width: 430px;
-        height: 240px;
+        width: 400px;
+        height: 200px;
     }
 
     #carouselExampleIndicators{
-        width: 430px;
-        height: 360px;
+        width: 400px;
+        height: 340px;
     }
     
     #carouselExampleControls{
-        width: 430px;
+        width: 400px;
     }
     
     #carrusel{
-        width: 430px;
+        width: 400px;
     }
 
     /*Video*/
     #video1{
-        width: 430px;
-        height: 240px;
+        width: 400px;
+        height: 210px;
     }
 
     /*Equipo de trabajo*/
