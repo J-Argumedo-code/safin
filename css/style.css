@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Montserrat:wght@300;600&display=swap');
+
+:root{
+    --white: #f1f1f1;
+    --gray: #343a40;
+    --teal: #008080;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--teal);
+}
+
+html::-webkit-scrollbar {
+    width: 6px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--white);
+    border-radius: 5px;
+}
+
+h1 {
+    color: var(--gray);
+    font-size: 280px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: justify;
+    margin: 0;
+}
+
+.text-d {
+    color: var(--gray);
+}
+
+.navbar {
+    height: 100px;
+    background-color: var(--teal);
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.4);
+}
+
+.nav .nav-link {
+    color: var(--white);
+    font-weight: bold;
+    background-image: linear-gradient(var(--gray), var(--gray));
+    background-position: 1rem 90%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: 0.4s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--white) !important;
+    background-size: calc(100% - 2rem) 2px;
+}
+
+.offcanvas{
+    background-color: var(--gray);
+}
+.offcanvas .btn-close{
+    filter: var(--bs-btn-close-white-filter);
+}
+
+hr {
+    opacity: 1;
+    border-top: 5px solid var(--gray);
+    width: 100px;
+}
+
+.hr-short-1 {
+    border-top: 5px solid var(--gray);
+}
+
+.hr-short-2 {
+    border-top: 5px solid var(--white);
+}
+
+@keyframes slide {
+    from {
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.indicator {
+    padding-top: 100px;
+}
+
+.section-2 {
+    background-color: var(--gray);
+}
+
+.card {
+    border: 0;
+    transition: 0.5s;
+    background-color: var(--teal);
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 20px 20px 60px #007373,
+        -20px -20px 60px #008d8d;
+}
+
+.card:hover {
+    box-shadow: 20px 20px 60px #006060,
+        -20px -20px 60px #00a0a0;
+}
+
+.carousel h4,
+.carousel p {
+    text-align: center;
+}
+
+.carousel-indicators {
+    bottom: -3rem;
+}
+
+.btn-main {
+    background-color: var(--gray);
+    border: 0.5px solid var(--teal);
+    transition: 0.5s;
+}
+.btn-main-2 {
+    background-color: var(--teal);
+    border: 2px solid var(--teal);
+    border-bottom: 2px solid var(--gray);
+    transition: 0.5s;
+}
+.btn-main-2:hover{
+    background-color: var(--gray);
+    border: 2px solid var(--gray);
+}
+
+.btn-main:hover,
+.btn-main.active,
+.nav-pills .nav-link.active {
+    background-color: var(--teal) !important;
+}
+
+.nav-pills button {
+    color: var(--white) !important;
+}
+
+.tab-content {
+    min-height: 320px;
+}
+
+.form-control,
+.form-control:focus,
+.form-floating>.form-control~label {
+    color: var(--white) !important;
+    border: 0;
+    box-shadow: none;
+}
+
+.form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
+.form-control,
+.form-control:active,
+.form-control:focus,
+label::after,
+footer {
+    background-color: var(--gray) !important;
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 991px){
+    h1 {
+        font-size: 180px;
+    }
+    h3{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 575.9px){
+    h1 {
+        font-size: 100px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    footer h5{
+        text-align: center;
+    }
+}
